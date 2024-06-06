@@ -1,4 +1,5 @@
 #browse
+    background-color: #f1f8f9
     .textbox
         width: 500px
         text-align: center
@@ -17,16 +18,18 @@
     .btn
         font-size: 18px
         border: 0.5px solid #bdbdbd
-        padding: 15px 46px
-        margin: 0 20px
+        padding: 15px 80px
+        margin: 10px 20px 0
         border-radius: 5px
     .bgc
         background-color: #3cc1d8
         color: #ffff
     .box
+        background-color: #ffff
         padding: 30px
+        margin-bottom: 15px
         .imgbox
-            width: 150px
+            width: 180px
             border-radius: 10px
         .textbox
             text-align: left
@@ -46,14 +49,52 @@
                 color: #232f4285
             .add
                 display: flex
+                align-items: center
                 input
                     border: 1px solid #e1e1e1
                     background-color: #e9e9e9
                     width: 50px
-                .btn
+                    height: 50px
+                .custom
                     background-color: #3cc1d8
                     color: #ffff
-                    padding: 7px 20px
+                    padding: 10px 20px
+                    margin: 0 0 0 10px
     .big
-        padding: 17px 53px
+        padding: 15px 53px
         margin-top: 50px
+
+    @media (max-width: 991px)
+        .textbox
+            h1
+                font-size: 70px
+        .box
+            padding: auto
+            .minibox
+                h2
+                    font-size: 25px
+                h5
+                    font-size: 22px
+            .btn
+                margin: 0 0 0 10px
+
+    @media (max-width: 768px)
+        .box
+            flex-flow: wrap
+            .textbox
+                margin-left: auto
+                p
+                    font-size: 12px
+                .minibox
+                    flex-direction: column
+                    h2
+                        margin: 20px 0 8px
+                .add
+                    input
+                        width: 40px
+                        height: 30px
+                    .btn
+                        padding: 5px 10px
+                        font-size: 12px
+        .big
+            padding: 10px 40px

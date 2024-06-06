@@ -2,6 +2,8 @@ header
     padding: 20px 0
     .imgbox
         width: 40px
+    .icon
+        display: none
     nav
         a
             font-size: 20px
@@ -9,3 +11,11 @@ header
             margin-right: 30px
         .home-color
             color: #74bebc
+
+    @media (max-width:991px)
+        nav
+            display: none
+        .icon
+            display: inline-block
+            font-size: 40px
+     
