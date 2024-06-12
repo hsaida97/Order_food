@@ -1,7 +1,7 @@
 header
     padding: 20px 0
     .imgbox
-        width: 40px
+        width: 50px
     .icon
         display: none
     nav
@@ -16,6 +16,18 @@ header
         nav
             display: none
         .icon
-            display: inline-block
-            font-size: 40px
-     
+            display: block
+            background-color: #d6d8d8
+            padding: 25px
+            i
+                font-size: 25px
+        #basket
+            display: none
+
+    @media (max-width:576px)
+        .minibox
+            display: flex
+            gap: 10px
+            #basket
+                display: block
+                background-color: #a6d5dd

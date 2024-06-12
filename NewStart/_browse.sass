@@ -8,26 +8,28 @@
             font-size: 60px
             color: #3cc1d8
         h4
-            font-size: 20px
+            font-size: 22px
             color: #6c7480
             margin: 20px 0
-            line-height: 1.2
+            line-height: 1.5
             span
                 color: #3cc1d8
                 text-decoration-line: underline
-    .btn
-        font-size: 18px
-        border: 0.5px solid #bdbdbd
-        padding: 15px 80px
-        margin: 10px 20px 0
-        border-radius: 5px
-    .bgc
-        background-color: #3cc1d8
-        color: #ffff
+    .minibox
+        .btn
+            font-size: 18px
+            border: 0.5px solid #bdbdbd
+            padding: 15px 80px
+            margin: 10px 20px 0
+            border-radius: 5px
+        .bgc
+            background-color: #3cc1d8
+            color: #ffff
     .box
         background-color: #ffff
         padding: 30px
         margin-bottom: 15px
+        border-radius: 10px
         .imgbox
             width: 180px
             border-radius: 10px
@@ -63,6 +65,11 @@
     .big
         padding: 15px 53px
         margin-top: 50px
+        font-size: 18px
+        border: 0.5px solid #bdbdbd
+        border-radius: 5px
+        background-color: #3cc1d8
+        color: #ffff
 
     @media (max-width: 991px)
         .textbox
@@ -88,7 +95,7 @@
                 .minibox
                     flex-direction: column
                     h2
-                        margin: 20px 0 8px
+                        margin: 20px 0 12px
                 .add
                     input
                         width: 40px
@@ -98,3 +105,19 @@
                         font-size: 12px
         .big
             padding: 10px 40px
+
+    @media (max-width: 576px)
+        .minibox
+            flex-direction: column
+        .box
+            padding: 15px
+            text-align: center
+            .textbox
+                margin-left: 10px
+                .minibox
+                    h2
+                        font-size: 25px
+                    h5
+                        font-size: 15px
+            .imgbox
+                width: 100vw
